@@ -1,3 +1,6 @@
+# Code by Divyam Garg
+
+
 import numpy as np
 import queue 
 
@@ -14,6 +17,10 @@ print(initial_matrix)
 
 
 #goal matrix
+
+matrix_goal= np.array([[1,2,3],[4,5,6][7,8,0]])
+
+#check for solvabilty
 def check_solvable(m):
     arr = np.reshape(m, 9)
     counter_state = 0
@@ -97,7 +104,7 @@ def check_equal(A,B):
                 return False
     return True
 
-
+# function to get child list
     
 def get_child_list(node):
     
